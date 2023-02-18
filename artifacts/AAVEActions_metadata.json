@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"AAVEActions.sol": "AAVEActions"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"AAVEActions.sol": {
+			"keccak256": "0x6de34813593f01bc9e5644e0eeee444999c2a85f0708ee2bc84c1853ce684f7b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a75f94c5a8f124f3d27ee69251bbb5b454c41a529077c7d32df269c97fc9a957",
+				"dweb:/ipfs/QmTjiP3KF4EU8yqKvbfBigEGgqajcPW2MsmKxp4ZstETvA"
+			]
+		}
+	},
+	"version": 1
+}

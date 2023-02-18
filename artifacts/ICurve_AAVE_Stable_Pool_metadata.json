@@ -1,0 +1,118 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "_amounts",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_min_mint_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "add_liquidity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "_amounts",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "bool",
+						"name": "_is_deposit",
+						"type": "bool"
+					}
+				],
+				"name": "calc_token_amount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[3]",
+						"name": "_min_amounts",
+						"type": "uint256[3]"
+					}
+				],
+				"name": "remove_liquidity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"curveActions.sol": "ICurve_AAVE_Stable_Pool"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"curveActions.sol": {
+			"keccak256": "0x475479e0e28c7e9d03fff44aae83e03bd8eb61dcbb641b2abd8216f43b498f9d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://77745436d4ab0cca003db7d05a85a0e103e8dd1a7c24ea79ed381fa003cf0df9",
+				"dweb:/ipfs/QmPTJfvUFs9YzYKwvq1ZwS3ev5cKxk2HbXBcAeuU5VynUe"
+			]
+		}
+	},
+	"version": 1
+}

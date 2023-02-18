@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getLendingPool",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/AAVEActions.sol": "ILendingPoolAddressesProvider"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AAVEActions.sol": {
+			"keccak256": "0x55976aaa5145540db6bd38e5749492d969a2be08afbef4055bd4562bdb90774b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://afc369978e5dfb7b4afcafb46cd3747d46c22948270a98044e2b984ac7b0c645",
+				"dweb:/ipfs/QmRGYeYFeLrxof5UAdzZWwgrGsZSPRojFE2gdAZWFGnf9s"
+			]
+		}
+	},
+	"version": 1
+}

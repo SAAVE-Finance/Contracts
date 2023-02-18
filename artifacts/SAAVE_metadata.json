@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SAAVE.sol": "SAAVE"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"AAVEActions.sol": {
+			"keccak256": "0x28a3e945c7674ae9e4a8167cc10e7b7bd8825cc53b9f0ae19f4a26be4a800d56",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://188cfa84ba6f3d4a3e2161326d1c5dc6379caf2985fa0e93f25f9cc930c75231",
+				"dweb:/ipfs/QmSMoGUkbtmBYfGjwqnJ6GsrtJqceUA2vsu4mgHVxjQhkg"
+			]
+		},
+		"SAAVE.sol": {
+			"keccak256": "0x0d46c3877804fe45512e69c22de40d5019d698adc6e492e059e0b5834217c7aa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://243a6a61c5b7bf9400e9f2cd755a21fb84b32b605504397db7ea5043d828c063",
+				"dweb:/ipfs/QmUApunL5UX53TkTbrqMYNufFiHLLTrA8ZrMs78wkZugeB"
+			]
+		},
+		"SAAVE_Receiver.sol": {
+			"keccak256": "0x570517339daff67701f0a9d543aace9c60f9060da3e458f127c14f4b5d57440e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c90bab510ebf3c84abec1905eefd23b6fc216a36797a5529569395c69b2190a2",
+				"dweb:/ipfs/QmSZfQiJTgkkmfMAoYKSGHCXGv7buoBAZC9hzb89v6Su9N"
+			]
+		},
+		"curveActions.sol": {
+			"keccak256": "0xfe5ba68f93e6213a16674e3b4b0f666235fd54bdbcf8e436d21e08d4c32f56fa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ca648cafda133f9c27f1e2d0e63c88f4cd244788a4acacad943daa2f759517b7",
+				"dweb:/ipfs/Qme9mHpi4SAwoGqppwb8kx2fkPhkmPvWV9CkkD4fMhcuAF"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,155 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "SAAVEFactory",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_daiAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_USDCAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_USDTAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "harvest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/SAAVE_Receiver.sol": "SAAVE_Receiver"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AAVEActions.sol": {
+			"keccak256": "0xa4e6c6b3fa81268704f6db45c179ac333e3f9ebcaea0efff21fe8e980240fa9b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8409681affc3d5006406378dd9eff232abb885c29a1c0983de0a23652f4259a7",
+				"dweb:/ipfs/QmScRkGCo9t5Njniw7d6Rh3nUXEMtWzUa3jHUvDWmVzSCD"
+			]
+		},
+		"contracts/SAAVE_Receiver.sol": {
+			"keccak256": "0xc163e529000807cc8c489c5488e1927e86528d04e50bca47547f90704ca1ff84",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://61314a68524f4cf9f7ab4b763be084bbb51df62a0c29cb95b04eb5018737a715",
+				"dweb:/ipfs/QmdQ64LhoAZRwVTmAQyPXGVqzYdpznxHLsMsrUWF11vERL"
+			]
+		},
+		"contracts/curveActions.sol": {
+			"keccak256": "0xdcffa25740e7c2ec6c2ed28881822371ac48f0cf41a8d61ec669747205bb2998",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a997d96ab9f590da4465f979ec760da16f260529b2e4889392b1a456cfa4151d",
+				"dweb:/ipfs/QmUezvc3qi7Mpjx3LZBWZw3D27g3Lue8tSjcvuAGuiis9m"
+			]
+		},
+		"interfaces/AAVE/IPool.sol": {
+			"keccak256": "0xfd16353507bd1225066e6e5a6d91c3a97d877b303c0d8dbe9110bad5a1c9664f",
+			"license": "AGPL-3.0",
+			"urls": [
+				"bzz-raw://5a987a662c9b8aa909ce72f2e833672b4027647eb357e4eb34cdf775b133511c",
+				"dweb:/ipfs/QmVRiPwLKwGXtfcTTfQVSKarQ653YjExnfVSt1cVAeMTCs"
+			]
+		},
+		"interfaces/AAVE/IPoolAddressProvider.sol": {
+			"keccak256": "0x9f3278344dafeac9c00e18a43396cf2c86cd68ad191b779d76f6ccb331d83c84",
+			"license": "AGPL-3.0",
+			"urls": [
+				"bzz-raw://70d6c66925a98aba29be5cb413caa4941359f04523cbfbdb6faf73cd419fac77",
+				"dweb:/ipfs/QmX1ieyWB4YXrDdLRJjEsuCbChzSXtZRCVvPNVwxtH2bEV"
+			]
+		},
+		"interfaces/Curve/ICurve_Gauge_Pool.sol": {
+			"keccak256": "0xea7a745b54a896f61dead520a7bfc3d0d390fa6a89dad1b3d3527a58a6aeb6ba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ab7fafaa30a00226d90d3fa3939b8ce884b31facc485ab02c526dd1b31d2d698",
+				"dweb:/ipfs/QmZwFrEjoiWMxJwa4VPZ1wTiPxBSDGEeeqJk1pFH2p5uCW"
+			]
+		},
+		"interfaces/Curve/ICurve_Pool.sol": {
+			"keccak256": "0x0418e5a2dcf56d5c35642d5aba1220012e3f3077377af6d1f685626a6e45356c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5c8caf24b08319e489f8cba8d5db9f8058489df2dedee7ddcab872a1f985733a",
+				"dweb:/ipfs/QmNwo5NSg291C84U6tUgT61rgqYftdeMo6UsmFaxZVVNRB"
+			]
+		},
+		"interfaces/OpenZeppelin/IERC20.sol": {
+			"keccak256": "0x890e5908218350943797a99d4801729321db110ffd2a57ce184563726458df40",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6634da67fef8d2fdee76f393bc9d83a1575953d43dedd7a1dd4a9375fb306d19",
+				"dweb:/ipfs/QmR6uv3oXm2BResPbBqH1n9iWDft6RounNjci7J6vj1LiB"
+			]
+		}
+	},
+	"version": 1
+}

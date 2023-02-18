@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/curveActions.sol": "curveActions"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/curveActions.sol": {
+			"keccak256": "0xdcffa25740e7c2ec6c2ed28881822371ac48f0cf41a8d61ec669747205bb2998",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a997d96ab9f590da4465f979ec760da16f260529b2e4889392b1a456cfa4151d",
+				"dweb:/ipfs/QmUezvc3qi7Mpjx3LZBWZw3D27g3Lue8tSjcvuAGuiis9m"
+			]
+		},
+		"interfaces/Curve/ICurve_Gauge_Pool.sol": {
+			"keccak256": "0xea7a745b54a896f61dead520a7bfc3d0d390fa6a89dad1b3d3527a58a6aeb6ba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ab7fafaa30a00226d90d3fa3939b8ce884b31facc485ab02c526dd1b31d2d698",
+				"dweb:/ipfs/QmZwFrEjoiWMxJwa4VPZ1wTiPxBSDGEeeqJk1pFH2p5uCW"
+			]
+		},
+		"interfaces/Curve/ICurve_Pool.sol": {
+			"keccak256": "0x0418e5a2dcf56d5c35642d5aba1220012e3f3077377af6d1f685626a6e45356c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5c8caf24b08319e489f8cba8d5db9f8058489df2dedee7ddcab872a1f985733a",
+				"dweb:/ipfs/QmNwo5NSg291C84U6tUgT61rgqYftdeMo6UsmFaxZVVNRB"
+			]
+		},
+		"interfaces/OpenZeppelin/IERC20.sol": {
+			"keccak256": "0x890e5908218350943797a99d4801729321db110ffd2a57ce184563726458df40",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6634da67fef8d2fdee76f393bc9d83a1575953d43dedd7a1dd4a9375fb306d19",
+				"dweb:/ipfs/QmR6uv3oXm2BResPbBqH1n9iWDft6RounNjci7J6vj1LiB"
+			]
+		}
+	},
+	"version": 1
+}

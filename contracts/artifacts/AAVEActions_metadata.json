@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/AAVEActions.sol": "AAVEActions"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AAVEActions.sol": {
+			"keccak256": "0xa4e6c6b3fa81268704f6db45c179ac333e3f9ebcaea0efff21fe8e980240fa9b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8409681affc3d5006406378dd9eff232abb885c29a1c0983de0a23652f4259a7",
+				"dweb:/ipfs/QmScRkGCo9t5Njniw7d6Rh3nUXEMtWzUa3jHUvDWmVzSCD"
+			]
+		},
+		"interfaces/AAVE/IPool.sol": {
+			"keccak256": "0xfd16353507bd1225066e6e5a6d91c3a97d877b303c0d8dbe9110bad5a1c9664f",
+			"license": "AGPL-3.0",
+			"urls": [
+				"bzz-raw://5a987a662c9b8aa909ce72f2e833672b4027647eb357e4eb34cdf775b133511c",
+				"dweb:/ipfs/QmVRiPwLKwGXtfcTTfQVSKarQ653YjExnfVSt1cVAeMTCs"
+			]
+		},
+		"interfaces/AAVE/IPoolAddressProvider.sol": {
+			"keccak256": "0x9f3278344dafeac9c00e18a43396cf2c86cd68ad191b779d76f6ccb331d83c84",
+			"license": "AGPL-3.0",
+			"urls": [
+				"bzz-raw://70d6c66925a98aba29be5cb413caa4941359f04523cbfbdb6faf73cd419fac77",
+				"dweb:/ipfs/QmX1ieyWB4YXrDdLRJjEsuCbChzSXtZRCVvPNVwxtH2bEV"
+			]
+		},
+		"interfaces/OpenZeppelin/IERC20.sol": {
+			"keccak256": "0x890e5908218350943797a99d4801729321db110ffd2a57ce184563726458df40",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6634da67fef8d2fdee76f393bc9d83a1575953d43dedd7a1dd4a9375fb306d19",
+				"dweb:/ipfs/QmR6uv3oXm2BResPbBqH1n9iWDft6RounNjci7J6vj1LiB"
+			]
+		}
+	},
+	"version": 1
+}

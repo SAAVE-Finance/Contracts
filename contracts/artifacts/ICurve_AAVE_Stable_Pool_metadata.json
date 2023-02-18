@@ -1,0 +1,126 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "_amounts",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_min_mint_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "add_liquidity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "_amounts",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "bool",
+						"name": "_is_deposit",
+						"type": "bool"
+					}
+				],
+				"name": "calc_token_amount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[3]",
+						"name": "_min_amounts",
+						"type": "uint256[3]"
+					}
+				],
+				"name": "remove_liquidity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/curveActions.sol": "ICurve_AAVE_Stable_Pool"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/curveActions.sol": {
+			"keccak256": "0x7a73d05330840125d5fb7215f8230983a1e7de6c105148d5a3f016ab15b83ff9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f91d8d297c7755ccf512cd982474c581e795f7aaff32bfdf90020592998ab23d",
+				"dweb:/ipfs/QmdWb5DnJhJ67moDj71uJG2WGDRxb2nnFR7citU7VnEy3g"
+			]
+		},
+		"interfaces/IERC20.sol": {
+			"keccak256": "0x890e5908218350943797a99d4801729321db110ffd2a57ce184563726458df40",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6634da67fef8d2fdee76f393bc9d83a1575953d43dedd7a1dd4a9375fb306d19",
+				"dweb:/ipfs/QmR6uv3oXm2BResPbBqH1n9iWDft6RounNjci7J6vj1LiB"
+			]
+		}
+	},
+	"version": 1
+}
