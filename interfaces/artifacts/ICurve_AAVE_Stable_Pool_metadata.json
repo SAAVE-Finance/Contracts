@@ -1,0 +1,118 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "_amounts",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_min_mint_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "add_liquidity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "_amounts",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "bool",
+						"name": "_is_deposit",
+						"type": "bool"
+					}
+				],
+				"name": "calc_token_amount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[3]",
+						"name": "_min_amounts",
+						"type": "uint256[3]"
+					}
+				],
+				"name": "remove_liquidity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"interfaces/ICurve_AAVE_Stable_Pool.sol": "ICurve_AAVE_Stable_Pool"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces/ICurve_AAVE_Stable_Pool.sol": {
+			"keccak256": "0x77d2c1ba439730a88418f638d79c0f524a042e6873a39ceb47f89695295d7720",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d88f15c56f150a8352922ddfa5e46106319f4474b5b25d0d448e2330447cbf7f",
+				"dweb:/ipfs/QmcamXxymSkAUboXJTz3xeA4dqEsmQTsRzz9rq5pqaXdhD"
+			]
+		}
+	},
+	"version": 1
+}

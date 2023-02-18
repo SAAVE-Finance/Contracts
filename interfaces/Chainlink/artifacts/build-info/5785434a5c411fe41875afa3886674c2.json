@@ -1,0 +1,368 @@
+{
+	"id": "5785434a5c411fe41875afa3886674c2",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.0",
+	"solcLongVersion": "0.8.0+commit.c7dfd78e",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"interfaces/Chainlink/AutomationCompatibleInterface.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ninterface AutomationCompatibleInterface {\r\n  /**\r\n   * @notice method that is simulated by the keepers to see if any work actually\r\n   * needs to be performed. This method does does not actually need to be\r\n   * executable, and since it is only ever simulated it can consume lots of gas.\r\n   * @dev To ensure that it is never called, you may want to add the\r\n   * cannotExecute modifier from KeeperBase to your implementation of this\r\n   * method.\r\n   * @param checkData specified in the upkeep registration so it is always the\r\n   * same for a registered upkeep. This can easily be broken down into specific\r\n   * arguments using `abi.decode`, so multiple upkeeps can be registered on the\r\n   * same contract and easily differentiated by the contract.\r\n   * @return upkeepNeeded boolean to indicate whether the keeper should call\r\n   * performUpkeep or not.\r\n   * @return performData bytes that the keeper should call performUpkeep with, if\r\n   * upkeep is needed. If you would like to encode data to decode later, try\r\n   * `abi.encode`.\r\n   */\r\n  function checkUpkeep(bytes calldata checkData) external returns (bool upkeepNeeded, bytes memory performData);\r\n\r\n  /**\r\n   * @notice method that is actually executed by the keepers, via the registry.\r\n   * The data returned by the checkUpkeep simulation will be passed into\r\n   * this method to actually be executed.\r\n   * @dev The input to this method should not be trusted, and the caller of the\r\n   * method should not even be restricted to any single registry. Anyone should\r\n   * be able call it, and the input should be validated, there is no guarantee\r\n   * that the data passed in is the performData returned from checkUpkeep. This\r\n   * could happen due to malicious keepers, racing keepers, or simply a state\r\n   * change while the performUpkeep transaction is waiting for confirmation.\r\n   * Always validate the data passed in.\r\n   * @param performData is the data which was passed back from the checkData\r\n   * simulation. If it is encoded, it can easily be decoded into other types by\r\n   * calling `abi.decode`. This data should not be trusted, and should be\r\n   * validated against the contract's current state.\r\n   */\r\n  function performUpkeep(bytes calldata performData) external;\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"interfaces/Chainlink/AutomationCompatibleInterface.sol": {
+				"AutomationCompatibleInterface": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "bytes",
+									"name": "checkData",
+									"type": "bytes"
+								}
+							],
+							"name": "checkUpkeep",
+							"outputs": [
+								{
+									"internalType": "bool",
+									"name": "upkeepNeeded",
+									"type": "bool"
+								},
+								{
+									"internalType": "bytes",
+									"name": "performData",
+									"type": "bytes"
+								}
+							],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"inputs": [
+								{
+									"internalType": "bytes",
+									"name": "performData",
+									"type": "bytes"
+								}
+							],
+							"name": "performUpkeep",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {
+							"checkUpkeep(bytes)": {
+								"details": "To ensure that it is never called, you may want to add the cannotExecute modifier from KeeperBase to your implementation of this method.",
+								"params": {
+									"checkData": "specified in the upkeep registration so it is always the same for a registered upkeep. This can easily be broken down into specific arguments using `abi.decode`, so multiple upkeeps can be registered on the same contract and easily differentiated by the contract."
+								},
+								"returns": {
+									"performData": "bytes that the keeper should call performUpkeep with, if upkeep is needed. If you would like to encode data to decode later, try `abi.encode`.",
+									"upkeepNeeded": "boolean to indicate whether the keeper should call performUpkeep or not."
+								}
+							},
+							"performUpkeep(bytes)": {
+								"details": "The input to this method should not be trusted, and the caller of the method should not even be restricted to any single registry. Anyone should be able call it, and the input should be validated, there is no guarantee that the data passed in is the performData returned from checkUpkeep. This could happen due to malicious keepers, racing keepers, or simply a state change while the performUpkeep transaction is waiting for confirmation. Always validate the data passed in.",
+								"params": {
+									"performData": "is the data which was passed back from the checkData simulation. If it is encoded, it can easily be decoded into other types by calling `abi.decode`. This data should not be trusted, and should be validated against the contract's current state."
+								}
+							}
+						},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"checkUpkeep(bytes)": "6e04ff0d",
+							"performUpkeep(bytes)": "4585e33b"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"checkData\",\"type\":\"bytes\"}],\"name\":\"checkUpkeep\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"upkeepNeeded\",\"type\":\"bool\"},{\"internalType\":\"bytes\",\"name\":\"performData\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"performData\",\"type\":\"bytes\"}],\"name\":\"performUpkeep\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"checkUpkeep(bytes)\":{\"details\":\"To ensure that it is never called, you may want to add the cannotExecute modifier from KeeperBase to your implementation of this method.\",\"params\":{\"checkData\":\"specified in the upkeep registration so it is always the same for a registered upkeep. This can easily be broken down into specific arguments using `abi.decode`, so multiple upkeeps can be registered on the same contract and easily differentiated by the contract.\"},\"returns\":{\"performData\":\"bytes that the keeper should call performUpkeep with, if upkeep is needed. If you would like to encode data to decode later, try `abi.encode`.\",\"upkeepNeeded\":\"boolean to indicate whether the keeper should call performUpkeep or not.\"}},\"performUpkeep(bytes)\":{\"details\":\"The input to this method should not be trusted, and the caller of the method should not even be restricted to any single registry. Anyone should be able call it, and the input should be validated, there is no guarantee that the data passed in is the performData returned from checkUpkeep. This could happen due to malicious keepers, racing keepers, or simply a state change while the performUpkeep transaction is waiting for confirmation. Always validate the data passed in.\",\"params\":{\"performData\":\"is the data which was passed back from the checkData simulation. If it is encoded, it can easily be decoded into other types by calling `abi.decode`. This data should not be trusted, and should be validated against the contract's current state.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"checkUpkeep(bytes)\":{\"notice\":\"method that is simulated by the keepers to see if any work actually needs to be performed. This method does does not actually need to be executable, and since it is only ever simulated it can consume lots of gas.\"},\"performUpkeep(bytes)\":{\"notice\":\"method that is actually executed by the keepers, via the registry. The data returned by the checkUpkeep simulation will be passed into this method to actually be executed.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"interfaces/Chainlink/AutomationCompatibleInterface.sol\":\"AutomationCompatibleInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"interfaces/Chainlink/AutomationCompatibleInterface.sol\":{\"keccak256\":\"0xa2221c5beae3f01c4f4c9251226c0669af84bcc1455749e08ed706c4b3f8e476\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://31bf9e75c520e411613d6d5b523e3c472ff70de9c00a668cd0791106a7bef515\",\"dweb:/ipfs/QmSEZaQ3hEEfDiz7AzkMymxvSd4N5zhH283WRSHGUKvKxK\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {
+							"checkUpkeep(bytes)": {
+								"notice": "method that is simulated by the keepers to see if any work actually needs to be performed. This method does does not actually need to be executable, and since it is only ever simulated it can consume lots of gas."
+							},
+							"performUpkeep(bytes)": {
+								"notice": "method that is actually executed by the keepers, via the registry. The data returned by the checkUpkeep simulation will be passed into this method to actually be executed."
+							}
+						},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"interfaces/Chainlink/AutomationCompatibleInterface.sol": {
+				"ast": {
+					"absolutePath": "interfaces/Chainlink/AutomationCompatibleInterface.sol",
+					"exportedSymbols": {
+						"AutomationCompatibleInterface": [
+							18
+						]
+					},
+					"id": 19,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": false,
+							"id": 18,
+							"linearizedBaseContracts": [
+								18
+							],
+							"name": "AutomationCompatibleInterface",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"documentation": {
+										"id": 2,
+										"nodeType": "StructuredDocumentation",
+										"src": "105:1001:0",
+										"text": " @notice method that is simulated by the keepers to see if any work actually\n needs to be performed. This method does does not actually need to be\n executable, and since it is only ever simulated it can consume lots of gas.\n @dev To ensure that it is never called, you may want to add the\n cannotExecute modifier from KeeperBase to your implementation of this\n method.\n @param checkData specified in the upkeep registration so it is always the\n same for a registered upkeep. This can easily be broken down into specific\n arguments using `abi.decode`, so multiple upkeeps can be registered on the\n same contract and easily differentiated by the contract.\n @return upkeepNeeded boolean to indicate whether the keeper should call\n performUpkeep or not.\n @return performData bytes that the keeper should call performUpkeep with, if\n upkeep is needed. If you would like to encode data to decode later, try\n `abi.encode`."
+									},
+									"functionSelector": "6e04ff0d",
+									"id": 11,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "checkUpkeep",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 5,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 4,
+												"mutability": "mutable",
+												"name": "checkData",
+												"nodeType": "VariableDeclaration",
+												"scope": 11,
+												"src": "1131:24:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes_calldata_ptr",
+													"typeString": "bytes"
+												},
+												"typeName": {
+													"id": 3,
+													"name": "bytes",
+													"nodeType": "ElementaryTypeName",
+													"src": "1131:5:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes_storage_ptr",
+														"typeString": "bytes"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "1130:26:0"
+									},
+									"returnParameters": {
+										"id": 10,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 7,
+												"mutability": "mutable",
+												"name": "upkeepNeeded",
+												"nodeType": "VariableDeclaration",
+												"scope": 11,
+												"src": "1175:17:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bool",
+													"typeString": "bool"
+												},
+												"typeName": {
+													"id": 6,
+													"name": "bool",
+													"nodeType": "ElementaryTypeName",
+													"src": "1175:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bool",
+														"typeString": "bool"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 9,
+												"mutability": "mutable",
+												"name": "performData",
+												"nodeType": "VariableDeclaration",
+												"scope": 11,
+												"src": "1194:24:0",
+												"stateVariable": false,
+												"storageLocation": "memory",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes_memory_ptr",
+													"typeString": "bytes"
+												},
+												"typeName": {
+													"id": 8,
+													"name": "bytes",
+													"nodeType": "ElementaryTypeName",
+													"src": "1194:5:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes_storage_ptr",
+														"typeString": "bytes"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "1174:45:0"
+									},
+									"scope": 18,
+									"src": "1110:110:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"documentation": {
+										"id": 12,
+										"nodeType": "StructuredDocumentation",
+										"src": "1226:1018:0",
+										"text": " @notice method that is actually executed by the keepers, via the registry.\n The data returned by the checkUpkeep simulation will be passed into\n this method to actually be executed.\n @dev The input to this method should not be trusted, and the caller of the\n method should not even be restricted to any single registry. Anyone should\n be able call it, and the input should be validated, there is no guarantee\n that the data passed in is the performData returned from checkUpkeep. This\n could happen due to malicious keepers, racing keepers, or simply a state\n change while the performUpkeep transaction is waiting for confirmation.\n Always validate the data passed in.\n @param performData is the data which was passed back from the checkData\n simulation. If it is encoded, it can easily be decoded into other types by\n calling `abi.decode`. This data should not be trusted, and should be\n validated against the contract's current state."
+									},
+									"functionSelector": "4585e33b",
+									"id": 17,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "performUpkeep",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 15,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 14,
+												"mutability": "mutable",
+												"name": "performData",
+												"nodeType": "VariableDeclaration",
+												"scope": 17,
+												"src": "2271:26:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes_calldata_ptr",
+													"typeString": "bytes"
+												},
+												"typeName": {
+													"id": 13,
+													"name": "bytes",
+													"nodeType": "ElementaryTypeName",
+													"src": "2271:5:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes_storage_ptr",
+														"typeString": "bytes"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "2270:28:0"
+									},
+									"returnParameters": {
+										"id": 16,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "2307:0:0"
+									},
+									"scope": 18,
+									"src": "2248:60:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 19,
+							"src": "60:2251:0"
+						}
+					],
+					"src": "33:2278:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

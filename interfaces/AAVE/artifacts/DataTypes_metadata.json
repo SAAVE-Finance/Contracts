@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"interfaces/AAVE/DataTypes.sol": "DataTypes"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces/AAVE/DataTypes.sol": {
+			"keccak256": "0x74154df44c0921d3095da365fef49819c34a8f134259c96bab0fc1ed747a5c09",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://84c0c3300c1ce15468f18485232a14065aec8d4f8f6cd0ab84c30f1418525fac",
+				"dweb:/ipfs/Qmc4WVMMYyogDbqws5XLYT2ogomcTTxQXTR3zhJ8QYM7Pd"
+			]
+		}
+	},
+	"version": 1
+}

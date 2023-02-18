@@ -1,0 +1,82 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_receiver",
+						"type": "address"
+					}
+				],
+				"name": "claim_rewards",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "receiver",
+						"type": "address"
+					}
+				],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"interfaces/ICurve_Gauge_Pool.sol": "IGauge_Pool"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces/ICurve_Gauge_Pool.sol": {
+			"keccak256": "0x9666815a7f50db4bceb84685e1bde155c5ee458ae9450044d12c57b85efd9b64",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://437cbacd34f00988046030edbc3b2b0eb06c87edbd50c8c1284fad0d1e5226d2",
+				"dweb:/ipfs/QmRaGakKBXsVtxHJTHFLRmehJ57FBKZEnq6YsPnU5jjPsH"
+			]
+		}
+	},
+	"version": 1
+}

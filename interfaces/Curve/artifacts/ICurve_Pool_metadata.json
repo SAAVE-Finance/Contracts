@@ -1,0 +1,152 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "_amounts",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_min_mint_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "add_liquidity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "_amounts",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "bool",
+						"name": "_is_deposit",
+						"type": "bool"
+					}
+				],
+				"name": "calc_token_amount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int128",
+						"name": "i",
+						"type": "int128"
+					},
+					{
+						"internalType": "int128",
+						"name": "j",
+						"type": "int128"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_dx",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_min_dy",
+						"type": "uint256"
+					}
+				],
+				"name": "exchange",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[3]",
+						"name": "_min_amounts",
+						"type": "uint256[3]"
+					}
+				],
+				"name": "remove_liquidity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"interfaces/Curve/ICurve_Pool.sol": "ICurve_Pool"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces/Curve/ICurve_Pool.sol": {
+			"keccak256": "0x0418e5a2dcf56d5c35642d5aba1220012e3f3077377af6d1f685626a6e45356c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5c8caf24b08319e489f8cba8d5db9f8058489df2dedee7ddcab872a1f985733a",
+				"dweb:/ipfs/QmNwo5NSg291C84U6tUgT61rgqYftdeMo6UsmFaxZVVNRB"
+			]
+		}
+	},
+	"version": 1
+}
