@@ -105,5 +105,7 @@ function harvest() external
 ```solidity
 function withdrawAll() external
 ```
-
+- removes all positions
+- swaps CRV for USDC
+- returns all funds to user + profit
 
